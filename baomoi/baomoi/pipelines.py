@@ -23,7 +23,7 @@ class BaomoiPipeline:
         self.curr.execute("""drop table if exists paper """)
         self.curr.execute("""create table paper (
                             id text,
-                            time datetime,
+                            time text,
                             category text,
                             header text,
                             content text,
@@ -35,10 +35,10 @@ class BaomoiPipeline:
             print("time test:" + i)
         self.curr.execute("""insert into paper values (?, ?, ?, ?, ?, ?)""", (
             str(item['id']),
-            item['time'][0],
+            str(item['time']),
             ', '.join(item['category']),
-            item['header'][0],
-            item['content'][0],
+            str(item['header']),
+            str(item['content']),
             ', '.join(map(lambda x: x.replace("\n", '').lstrip(" "), item['keyword']))
         ))
         self.conn.commit()

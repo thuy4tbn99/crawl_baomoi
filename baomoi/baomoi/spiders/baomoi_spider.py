@@ -15,14 +15,15 @@ class BaomoiSpiderSpider(scrapy.Spider):
 
     def parse(self, response):
         # các chủ đề thoisu.epi, ...
-        all_topic = response.css('.nav .container :nth-child(1)').css('::attr(href)')[1].extract()
+        all_topic = response.css('.nav .container :nth-child(1)').css('::attr(href)').extract()
 
         for topic in all_topic:
             topic = response.urljoin(topic)
-            # print(topic)
+            print("Topic:" + topic)
             yield scrapy.Request(topic, callback=self.crawlTopic)
 
     def crawlTopic(self, response):
+        print("crawTopic note"+ response.request.url)
         # các bài báo cụ thể trong chủ đề /thoi-su.epi báo: 1234.epi, ...
         all_paper = response.css('.story__heading a').css('::attr(href)').extract()
 
@@ -47,7 +48,7 @@ class BaomoiSpiderSpider(scrapy.Spider):
 
     def crawlPaper(self, response):
         items = BaomoiItem()
-
+        print('crawPaper note')
         id = re.findall('(\d+).epi', str(response.url))[0]
         category = response.css('.cate').css('::text').extract()
         time = response.css('.time').css('::text').extract()
@@ -58,9 +59,9 @@ class BaomoiSpiderSpider(scrapy.Spider):
         items['id'] = id
         items['time'] = time
         items['category'] = category
-        items['content'] = "thuy"
+        items['content'] = content
         items['header'] = header
-        items['keyword'] = "thu"
+        items['keyword'] = keyword
 
         # print(str(items['id']))
 
