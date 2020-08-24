@@ -31,6 +31,8 @@ class BaomoiPipeline:
                             )""")
 
     def store_db(self, item):
+        for i in item['time']:
+            print("time test:" + i)
         self.curr.execute("""insert into paper values (?, ?, ?, ?, ?, ?)""", (
             str(item['id']),
             item['time'][0],
