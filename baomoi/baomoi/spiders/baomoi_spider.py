@@ -30,8 +30,8 @@ class BaomoiSpiderSpider(scrapy.Spider):
             print(id_epi)
             url = 'https://baomoi.com/a/c/' + id_epi
             print(url)
-            if index == 1:
-                break
+            # if index == 1:  #debug limit loop
+            #     break
             yield scrapy.Request(url, callback=self.crawlPaper)
         # pass
 

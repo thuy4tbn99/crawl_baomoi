@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6dd1a936-b707-4cbd-840d-9112b167972d" name="Default Changelist" comment="" />
+    <list default="true" id="6dd1a936-b707-4cbd-840d-9112b167972d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baomoi/baomoi.db" beforeDir="false" afterPath="$PROJECT_DIR$/baomoi/baomoi.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/baomoi/baomoi/spiders/baomoi_spider.py" beforeDir="false" afterPath="$PROJECT_DIR$/baomoi/baomoi/spiders/baomoi_spider.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -10,11 +15,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/baomoi/baomoi/spiders/baomoi_spider.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="204">
-              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+              <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
               </folding>
@@ -31,11 +36,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baomoi/baomoi/pipelines.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
+            <state relative-caret-position="273">
+              <caret line="42" selection-start-line="42" selection-end-line="42" />
               <folding>
                 <element signature="e#238#273#0" expanded="true" />
               </folding>
@@ -46,8 +51,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/baomoi/baomoi/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="64" selection-start-line="64" selection-end-line="66" selection-end-column="1" />
+            <state relative-caret-position="222">
+              <caret line="87" column="53" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -61,6 +66,14 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>filter</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
@@ -68,8 +81,8 @@
         <option value="$PROJECT_DIR$/baomoi/baomoi/spiders/__init__.py" />
         <option value="$PROJECT_DIR$/baomoi/baomoi/items.py" />
         <option value="$PROJECT_DIR$/baomoi/baomoi/settings.py" />
-        <option value="$PROJECT_DIR$/baomoi/baomoi/spiders/baomoi_spider.py" />
         <option value="$PROJECT_DIR$/baomoi/baomoi/pipelines.py" />
+        <option value="$PROJECT_DIR$/baomoi/baomoi/spiders/baomoi_spider.py" />
       </list>
     </option>
   </component>
@@ -84,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -113,11 +127,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Quotes" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../baomoicrawl/baomoicrawl" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RunDashboard">
@@ -201,6 +215,13 @@
     <entry file="file://$PROJECT_DIR$/baomoi/test1.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/baomoi/baomoi/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="87" column="53" selection-start-line="87" selection-start-column="50" selection-end-line="87" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/baomoi/baomoi/items.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -208,29 +229,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/baomoi/baomoi/settings.py">
+    <entry file="file://$PROJECT_DIR$/baomoi/baomoi/pipelines.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="64" selection-start-line="64" selection-end-line="66" selection-end-column="1" />
+        <state relative-caret-position="273">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#238#273#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/baomoi/baomoi/spiders/baomoi_spider.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
-          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
+          <caret line="24" column="55" lean-forward="true" selection-start-line="24" selection-start-column="55" selection-end-line="24" selection-end-column="55" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/baomoi/baomoi/pipelines.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
-          <folding>
-            <element signature="e#238#273#0" expanded="true" />
           </folding>
         </state>
       </provider>
